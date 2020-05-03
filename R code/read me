@@ -1,1 +1,3 @@
-
+# the main file is ub_mlsmc.r
+# please install package smccbase14 before running code
+# one should create a new folder named 'MC' to store data and results of the algorithm
