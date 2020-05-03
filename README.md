@@ -8,4 +8,4 @@ We consider the problem of estimating a parameter <a href="https://www.codecogs.
 
 Installation
 --
-Install the package smccbase14 in R before running code.
+Install the package smccbase14_0.1.0.tar.gz in R before running code.
