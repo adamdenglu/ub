@@ -268,9 +268,9 @@ generate_data <- function(param, mod_param){
   # generate data
   library(MASS)
   
-  big_k = param$big_k  # number of u_i
-  small_k = param$small_k  # parameter in step-size
-  gp_x = param$gp_x  # G(u)=[ p(0.25;u),p(0.75;u) ]
+  big_k = mod_param$big_k  # number of u_i
+  small_k = mod_param$small_k  # parameter in step-size
+  gp_x = mod_param$gp_x  # G(u)=[ p(0.25;u),p(0.75;u) ]
   gamma_y = (mod_param$theta_0)^(-1) * diag(big_k)   # covariance matrix of noise in data
   
   l_simu = mod_param$l_simu  # h = 2^(-20), when generate the data
