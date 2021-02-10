@@ -87,6 +87,10 @@ Mod_param = list(
 
 ##########################################################################
 # run unbiased algorithm
+if (Options$trueVal){  # calculate truevalue
+  generate_trueval(Param, Mod_param, Options)
+}
+
 if (Options$run_unbia_smc){  
   algo_result = generate_and_run_unbiased(Param, Mod_param, Options, Options_unbiased)
 }
@@ -108,9 +112,7 @@ if(Options_SGD$run_SGD_MLSMC){  # run SGD with MLSMC
 # # visulize_test( Param , Mod_param , Options )
 # }
 
-if (Options$trueVal){  # calculate truevalue
-  generate_trueval(Param, Mod_param, Options)
-}
+
 
 if (Options$run_compare_mlsmc | Options$run_compare_smc){  # compare mlsmc vs smc
   compare_mlsmc_smc2(Param, Mod_param, Options)
